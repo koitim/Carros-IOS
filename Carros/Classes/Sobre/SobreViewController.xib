@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SobreViewController" customModule="Carros" customModuleProvider="target">
+            <connections>
+                <outlet property="progress" destination="afb-OF-IOK" id="lmh-aZ-nbT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="SMs-UJ-baR" id="RuF-gh-43k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMs-UJ-baR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3Q9-CO-R7r"/>
+                    </connections>
+                </webView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="afb-OF-IOK">
+                    <rect key="frame" x="177" y="323" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SMs-UJ-baR" firstAttribute="centerX" secondItem="afb-OF-IOK" secondAttribute="centerX" id="3qs-7d-lej"/>
+                <constraint firstAttribute="bottom" secondItem="SMs-UJ-baR" secondAttribute="bottom" id="ByG-RT-sfu"/>
+                <constraint firstAttribute="trailing" secondItem="SMs-UJ-baR" secondAttribute="trailing" id="JC2-q6-ik1"/>
+                <constraint firstItem="SMs-UJ-baR" firstAttribute="centerY" secondItem="afb-OF-IOK" secondAttribute="centerY" id="NCr-sG-THu"/>
+                <constraint firstItem="SMs-UJ-baR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SFJ-fJ-XQo"/>
+                <constraint firstItem="SMs-UJ-baR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h9M-1i-9n2"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="274" y="61"/>
+        </view>
+    </objects>
+</document>
